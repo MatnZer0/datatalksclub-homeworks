@@ -1,0 +1,13 @@
+Data transformers used:
+
+@transformer
+def transform(data, *args, **kwargs):
+
+    return data[data['passenger_count'] > 0]
+
+and later
+
+@transformer
+def transform(data, *args, **kwargs):
+
+    return data[data['trip_distance'] > 0]
